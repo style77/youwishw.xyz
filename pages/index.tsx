@@ -30,7 +30,7 @@ const Home: NextPage = () => {
   }, [])
 
   return (
-    <div className="grid h-screen place-items-center">
+    <div className="grid h-screen place-items-center z-index-10">
       <div className="select-none">
         <div className="cursor-default duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
           <span className="text-6xl text-slate-100 font-light antialiased block mb-2 transition ease-in-out duration-300 hover:text-slate-100">youwish</span>

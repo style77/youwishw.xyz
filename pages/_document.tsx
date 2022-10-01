@@ -7,8 +7,8 @@ export default function Document() {
                 <title>youwish.dev</title>
             </Head>
             <body>
-                <div id="background-fade" className="h-screen w-full bg-black/75">
-                    <section id="stars">
+                <div id="background-fade" className="w-screen bg-black/75">
+                    <section id="stars" className="text-center align-center justify-center">
                         <span></span>
                         <span></span>
                         <span></span>
