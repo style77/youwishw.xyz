@@ -62,7 +62,7 @@ a {
 
 @keyframes animate {
   0% {
-    transform: rotate(315deg) translateX(100vw) translateY(50vh);
+    transform: rotate(315deg) translateX(0);
     opacity: 1;
   }
 
@@ -72,7 +72,7 @@ a {
   }
 
   100% {
-    transform: rotate(315deg) translateX(-100vw) translateY(50vh);
+    transform: rotate(315deg) translateX(-100vw);
     opacity: 0;
 
   }
