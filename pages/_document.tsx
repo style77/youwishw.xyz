@@ -6,6 +6,7 @@ export default function Document() {
             <Head>
                 <title>youwish.dev</title>
                 <link rel="shortcut icon" href="/favicon.ico" />
+                <link rel="preload" />
                 <meta name="robots" content="all" />
             </Head>
             <body>
