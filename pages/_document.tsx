@@ -5,6 +5,7 @@ export default function Document() {
         <Html lang='en'>
             <Head>
                 <title>youwish.dev</title>
+                <link rel="shortcut icon" href="/favicon.ico" />
                 <meta name="robots" content="all" />
             </Head>
             <body>
