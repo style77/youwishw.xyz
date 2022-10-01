@@ -42,12 +42,11 @@ a {
   left: 50%;
   width: 4px;
   height: 4px;
-  background: #fff;
+  background: rgb(96, 14, 134);
   border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1);
+  box-shadow: 0 0 0 4px rgba(240, 168, 255, 0.1), 0 0 0 8px rgba(212, 120, 255, 0.1), 0 0 20px rgb(224, 176, 252);
+  backdrop-filter: blur(1px);
   animation: animate 3s linear infinite;
-
-  z-index: 1;
 }
 
 #stars span::before {
@@ -57,7 +56,7 @@ a {
   transform: translateY(-50%);
   width: 300px;
   height: 1px;
-  background: linear-gradient(90deg, #fff, transparent);
+  background: linear-gradient(90deg, rgb(255, 233, 252), transparent);
 }
 
 @keyframes animate {
@@ -158,4 +157,14 @@ a {
   left: initial;
   animation-delay: 2.75s;
   animation-duration: 2.25s;
+}
+
+@keyframes shiningText {
+  0% {
+    background-position: -500%;
+  }
+
+  100% {
+    background-position: 500%;
+  }
 }
