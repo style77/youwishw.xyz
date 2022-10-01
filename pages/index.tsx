@@ -39,7 +39,7 @@ const Home: NextPage = () => {
   return (
     <div className="grid h-screen place-items-center">
       <Head>
-        <title>🤍 Martynka 🤍</title>
+        <title>youwish.dev</title>
       </Head>
       <div className="select-none">
         <div className="cursor-default duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
