@@ -3,7 +3,9 @@ import { Html, Head, Main, NextScript } from 'next/document'
 export default function Document() {
     return (
         <Html lang='en'>
-            <Head />
+            <Head>
+                <title>youwish.dev</title>
+            </Head>
             <body>
                 <div id="background-fade" className="h-screen w-full bg-black/75">
                     <section id="stars">

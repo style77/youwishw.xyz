@@ -2,11 +2,6 @@ import type { NextPage } from 'next'
 
 import React, { useEffect, useState } from "react"
 
-import Head from 'next/head'
-import Image from 'next/image'
-
-import { Main } from 'next/document';
-
 import { FiGithub, FiMail, FiX } from 'react-icons/fi'
 import { Tooltip } from '../components/tooltip';
 
@@ -14,33 +9,28 @@ const MAIL = "stylek777@gmail.com"
 const GITHUB = "Style77"
 
 const Home: NextPage = () => {
-  const [ShowTooltip, setShowTooltip] = useState(false)
 
   useEffect(() => {
     const replace = () => {
       setTimeout(function () {
-        var replacers = document.querySelectorAll('[data-replace]');
-        for (var i = 0; i < replacers.length; i++) {
-          let replaceClasses = JSON.parse(replacers[i].dataset.replace.replace(/'/g, '"'));
-          Object.keys(replaceClasses).forEach(function (key) {
-            replacers[i].classList.remove(key);
-            replacers[i].classList.add(replaceClasses[key]);
-          });
+        var replacers = document.querySelectorAll('[data-replace]')
+        for (const replacer of replacers) {
+          if (replacer instanceof HTMLElement) {
+            const replacerDataset = replacer.dataset.replace!
+            let replaceClasses = JSON.parse(replacerDataset.replace(/'/g, '"'))
+            Object.keys(replaceClasses).forEach(function (key) {
+              replacer.classList.remove(key)
+              replacer.classList.add(replaceClasses[key])
+            })
+          }
         }
-      }, 1);
+      }, 1)
     }
     replace()
   }, [])
 
-  const showTooltip = () => {
-    setShowTooltip(true)
-  }
-
   return (
     <div className="grid h-screen place-items-center">
-      <Head>
-        <title>youwish.dev</title>
-      </Head>
       <div className="select-none">
         <div className="cursor-default duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
           <span className="text-6xl text-slate-100 font-light antialiased block mb-2 transition ease-in-out duration-300 hover:text-slate-100">youwish</span>
