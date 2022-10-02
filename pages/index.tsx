@@ -54,7 +54,7 @@ const Home: NextPage = () => {
       animation != "" ? animation : animation = compStyles.getPropertyValue('-webkit-animation-duration');
 
 
-      const animationTime = parseFloat(animation.match(/\d*[.]?\d+/)) * 1000;
+      const animationTime = parseFloat(animation.match(/\d*[.]?\d+/)?.[0] ?? "") * 1000;
       return animationTime;
     }
 
@@ -77,7 +77,7 @@ const Home: NextPage = () => {
     }, 1)
   }
   replace()
-}, [])
+}, [lastSubTitle])
 
 return (
   <>
@@ -97,7 +97,7 @@ return (
           <h1 className="text-6xl text-slate-100 font-light antialiased block mb-2 transition ease-in-out duration-300 hover:text-slate-100" id="title">youwish </h1>
           <h1 className="text-xl text-slate-300 font-light antialiased transition ease-in-out duration-300 hover:text-slate-200" id="subtitle">a developer for your needs</h1>
         </div>
-        <div className="inline-grid grid-cols-3 gap-6 mt-5 inline z-index-10">
+        <div className="inline-grid grid-cols-3 gap-6 mt-5 z-index-10">
           <div id="github" className="delay-300 duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out inline" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
             <a href={`https://github.com/${GITHUB}`}>
               <div className="h-14 w-14 rounded-full bg-violet-600 text-slate-200 transition ease-in-out duration-300 hover:bg-slate-100 hover:text-zinc-900 grid place-items-center">
