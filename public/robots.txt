@@ -1,2 +1,9 @@
+# *
 User-agent: *
 Allow: /
+
+# Host
+Host: https://youwishw.xyz/
+
+# Sitemaps
+Sitemap: https://youwishw.xyz/sitemap.xml
