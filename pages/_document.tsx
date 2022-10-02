@@ -4,7 +4,6 @@ export default function Document() {
     return (
         <Html lang='en'>
             <Head>
-                <title>youwish.dev</title>
                 <link rel="shortcut icon" href="/favicon.ico" />
                 {/* <link rel="preload" /> */}
                 <meta name="robots" content="all" />

@@ -159,12 +159,32 @@ a {
   animation-duration: 2.25s;
 }
 
-@keyframes shiningText {
+#subtitle {
+  animation: slidedown 8s infinite;
+  -webkit-animation: slidedown 8s infinite;
+  -moz-animation: slidedown 8s infinite;
+}
+
+@keyframes slidedown {
   0% {
-    background-position: -500%;
+    opacity: 50;
   }
 
-  100% {
-    background-position: 500%;
+  5% {
+    opacity: 0;
+    transform: translateY(0.5em);
+  }
+
+  7% {
+    transform: translateY(-1em);
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  20% {
+    transform: translateY(0);
+    opacity: 100;
   }
 }
