@@ -77,7 +77,7 @@ const Home: NextPage = () => {
     }, 1)
   }
   replace()
-}, [lastSubTitle])
+}, [])
 
 return (
   <>
