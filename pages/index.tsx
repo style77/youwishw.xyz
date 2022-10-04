@@ -126,7 +126,7 @@ const Home: NextPage = () => {
               data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'
             >
               <a href={`https://github.com/${GITHUB}`}>
-                <div className="h-14 w-14 rounded-full bg-violet-600 text-slate-200 transition ease-in-out duration-300 hover:bg-slate-100 hover:text-zinc-900 grid place-items-center">
+                <div className="h-14 w-14 rounded-full bg-zinc-900 text-slate-200 transition ease-in-out duration-300 hover:bg-slate-100 hover:text-zinc-900 grid place-items-center">
                   <FiGithub className="h-7 w-7 block m-auto" />
                 </div>
               </a>
@@ -137,7 +137,7 @@ const Home: NextPage = () => {
               data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'
             >
               <a href={`mailto:${MAIL}`}>
-                <div className="h-14 w-14 rounded-full bg-violet-600 text-slate-200 transition ease-in-out duration-300 hover:bg-slate-100 hover:text-zinc-900 grid place-items-center">
+                <div className="h-14 w-14 rounded-full bg-zinc-900 text-slate-200 transition ease-in-out duration-300 hover:bg-slate-100 hover:text-zinc-900 grid place-items-center">
                   <FiMail className="h-7 w-7 block m-auto" />
                 </div>
               </a>
@@ -148,7 +148,7 @@ const Home: NextPage = () => {
               data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'
             >
               <a href="https://t.me/youwishw">
-                <div className="h-14 w-14 rounded-full bg-violet-600 text-slate-200 transition ease-in-out duration-300 hover:bg-slate-100 hover:text-zinc-900 grid place-items-center">
+                <div className="h-14 w-14 rounded-full bg-zinc-900 text-slate-200 transition ease-in-out duration-300 hover:bg-slate-100 hover:text-zinc-900 grid place-items-center">
                   <FaTelegramPlane className="w-7 h-7" />
                 </div>
               </a>
