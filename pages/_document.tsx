@@ -1,6 +1,6 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
-const BACKGROUNDS_COUNT = 3;
+const BACKGROUNDS_COUNT = 7;
 
 export default function Document() {
   return (
