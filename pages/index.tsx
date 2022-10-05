@@ -25,8 +25,31 @@ const TITLES = [
   "I am doing SEO as well",
 ];
 
+const BACKGROUNDS_COUNT = 7;
+
 const Home: NextPage = () => {
   const [lastSubTitle, setLastSubTitle] = useState("");
+
+  useEffect(() => {
+    const backgroundNum = () =>
+      Math.floor(Math.random() * BACKGROUNDS_COUNT) + 1;
+
+    let interval: any
+
+    const timer = () => {
+      document.body.style.background =
+        "url('/backgrounds/" +
+        backgroundNum() +
+        ".jpg') no-repeat center center fixed";
+
+      document.body.style.transition = "background 2s";
+
+      interval = setTimeout(timer, 20000);
+    };
+    timer();
+
+    return () => clearTimeout(interval);
+  });
 
   useEffect(() => {
     const switchingText = () => {

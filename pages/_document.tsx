@@ -1,22 +1,14 @@
 import { Html, Head, Main, NextScript } from "next/document";
-
-const BACKGROUNDS_COUNT = 7;
+import { useEffect, useState } from "react";
 
 export default function Document() {
   return (
     <Html lang="en">
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="preload" />
         <meta name="robots" content="all" />
       </Head>
-      <body
-        style={{
-          background: `url("/backgrounds/${
-            Math.floor(Math.random() * BACKGROUNDS_COUNT) + 1
-          }.jpg") no-repeat center center fixed`,
-        }}
-      >
+      <body>
         <div
           id="background-fade"
           className="w-screen backdrop-blur-lg"
